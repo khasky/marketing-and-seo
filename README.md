@@ -1,5 +1,7 @@
 # Marketing and SEO Playbook
 
+[![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE) [![Web Reactions](https://api.webreactions.app/badge/github/khasky/marketing-and-seo-playbook.svg)](https://webreactions.app/?utm_source=github&utm_channel=repository&utm_medium=marketing-and-seo-playbook)
+
 Practical marketing and SEO guide for founders, product teams, and early-stage operators who need a clearer path from positioning to acquisition, measurement, and retention.
 
 > *If I were defining go-to-market defaults for a product team today, I would start with five things first: a narrow audience, a credible message, pages that convert, measurement you can trust, and acquisition loops that compound instead of spike once and disappear.*
