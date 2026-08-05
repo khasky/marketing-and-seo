@@ -22,6 +22,16 @@ Technical SEO lines up with Search Essentials (helpful, reliable, people-first c
 - **Meta robots** — `noindex` for pages that should not appear in search results.
 - **Google-specific** — confirm `googlebot` can render critical content (avoid hiding main text behind interactions without testing).
 
+### The two directives cancel each other
+
+`Disallow` and `noindex` do different jobs, and combining them silently breaks the one you actually want. `Disallow` says *do not fetch this*. `noindex` says *do not list this in results* — and it lives in the page's own meta tag or `X-Robots-Tag` header, which a crawler can only read by fetching the page.
+
+So a URL that is both disallowed and `noindex` can still appear in results: the crawler obeys the `Disallow`, never sees the `noindex`, and may index the URL anyway from links pointing at it — typically as a bare URL with no description, since it never read the content.
+
+The rule that follows: to keep a page out of the index, **allow** it to be crawled and serve `noindex`. Use `Disallow` for crawl-budget control on pages you do not care about listing, never as a hiding mechanism.
+
+Worth knowing that this is a convention that only recently became a standard. Martijn Koster proposed `robots.txt` in 1994 and it ran on consensus for 28 years, until [RFC 9309](https://www.rfc-editor.org/rfc/rfc9309) formalized it in 2022. Which is why compliance is voluntary and behavior around the edges — wildcards, `Allow` precedence, size limits — still varies between crawlers.
+
 ## Canonical URLs and duplicates
 
 - One preferred URL per conceptual page; use `rel=canonical` for near-duplicates (tracking params, print views, HTTP/HTTPS variants).
