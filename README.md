@@ -1,6 +1,6 @@
 # Marketing and SEO Playbook
 
-[![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE) [![Web Reactions](https://api.webreactions.app/badge/github/khasky/marketing-and-seo-playbook.svg)](https://webreactions.app/?utm_source=github&utm_channel=repository&utm_medium=marketing-and-seo-playbook)
+[![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE) [![Emojery](https://api.emojery.app/badge/github/khasky/marketing-and-seo-playbook.svg)](https://emojery.app/react?t=github/khasky/marketing-and-seo-playbook)
 
 Practical marketing and SEO guide for founders, product teams, and early-stage operators who need a clearer path from positioning to acquisition, measurement, and retention.
 
